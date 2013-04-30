@@ -9,6 +9,6 @@
 * 每行程式碼的尾端，不要有多餘的空白。
 
 ### Markdown 語法參考網址
-https://blog.othree.net/log/2011/04/07/markdown-intro-and-doc/
-http://markdown.tw/
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+- https://blog.othree.net/log/2011/04/07/markdown-intro-and-doc/
+- http://markdown.tw/
+- https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
