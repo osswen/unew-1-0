@@ -1,0 +1,146 @@
+/*-----------------------------------------------------------------------------
+ [TABLE OF CONTENTS]
+    +content-main
+        =slogan
+        =table
+        =pager
+        =work-detail
+-----------------------------------------------------------------------------*/
+
+#content-wrapper {
+    background: url(../../i/bg-work.png) no-repeat center 200px;
+}
+
+#content-main .article-content {
+    margin-bottom: 30px;
+}
+
+#content-main #work-list h2 {
+    margin: 0;
+}
+
+/**
+*
+* =slogan
+*
+**/
+
+#content-main .article-content .slogan {
+    height: 123px;
+    padding: 55px 0 0 10px;
+    border-bottom: 1px solid #9b7c43;
+    background: url(../../i/photo-slogan03.png) no-repeat right 0;
+}
+
+#content-main .article-content .slogan h3 {
+    margin-bottom: 10px;
+    color: #717171;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#content-main .article-content .slogan h4 {
+    margin-bottom: 10px;
+    color: #8e9e20;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#content-main .article-content .slogan h5 {
+    color: #9b7c43;
+}
+
+/**
+*
+* =table
+*
+**/
+
+#work-list table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #9b7c43;
+}
+
+#work-list table th {
+    height: 32px;
+    border-bottom: 1px solid #9b7c43;
+    color: #9b7c43;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#work-list table td {
+    padding: 7px 0;
+    border-bottom: 1px dotted #9b7c43;
+    color: #585858;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#work-list table td.num {
+    color: #9b7c43;
+}
+
+#work-list table td.overall {
+    text-align: left;
+}
+
+/**
+*
+* =work-detail
+*
+**/
+
+#work-detail .content h3 {
+    overflow: hidden;
+    padding: 9px 0 7px;
+    border-bottom: 1px solid #9b7c43;
+    font-size: 14px;
+}
+
+#work-detail .content h3 span {
+    float: left;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    margin: 0 8px 0 0;
+    padding: 0 5px 0 0;
+    border-right: 1px solid #9b7c43;
+    color: #9b7c43;
+    text-align: right;
+}
+
+#work-detail .content h3 em {
+    float: left;
+    color: #585858;
+}
+
+#work-detail .content .date {
+    float: right;
+    color: #585858;
+    font-size: 12px;
+}
+
+#work-detail .content blockquote {
+    clear: both;
+    padding: 0 10px;
+}
+
+#work-detail .content blockquote p {
+    margin-bottom: 20px;
+    color: #585858;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#work-detail .content blockquote img {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 7px;
+    border: 1px solid #9b7c43;
+    border-radius: 5px;
+}

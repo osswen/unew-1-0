@@ -1,0 +1,191 @@
+/*-----------------------------------------------------------------------------
+ [TABLE OF CONTENTS]
+    +content-main
+        =slogan
+        =table
+        =pager
+        =work-detail
+-----------------------------------------------------------------------------*/
+
+#content-wrapper {
+    background: url(../../i/bg-product.png) no-repeat center 200px;
+}
+
+#content-main .article-content {
+    margin-bottom: 30px;
+}
+
+/**
+*
+* =product-list
+*
+**/
+
+#product-list ul {
+    overflow: hidden;
+}
+
+#product-list ul li {
+    float: left;
+    overflow: hidden;
+    width: 145px;
+    height: 171px;
+    margin: 0 25px 50px 0;
+    padding: 4px;
+    background-color: #9b7c43;
+}
+
+#product-list ul li.last {
+    margin: 0 0 50px 0;
+}
+
+#product-list ul li img {
+    display: block;
+    margin-bottom: 4px;
+}
+
+#product-list ul li p {
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#product-list ul li p a {
+    color: #fff;
+}
+
+/**
+*
+* =product-detail
+*
+**/
+
+#product-detail .wrap {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#product-detail .photo-list {
+    float: left;
+    width: 395px;
+    margin-right: 10px;
+}
+
+#product-detail .photo-list .main {
+    display: block;
+    margin-bottom: 6px;
+    padding: 4px;
+    border: 1px solid #888;
+}
+
+#product-detail .photo-list ul {
+    overflow: hidden;
+}
+
+#product-detail .photo-list ul li {
+    float: left;
+    width: 90px;
+    height: 90px;
+    margin-right: 9px;
+    border: 1px solid #888;
+}
+
+#product-detail .photo-list ul li.last {
+    margin: 0;
+}
+
+#product-detail .product-info {
+    float: left;
+    width: 295px;
+}
+
+#product-detail .product-info h1 {
+    margin: 170px 0 8px 0;
+    padding: 0 0 6px 3px;
+    border-bottom: 1px solid #e6e9eb;
+    color: #9b7c43;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+#product-detail .product-info ul.share {
+    float: right;
+}
+
+#product-detail .product-info ul.share li {
+    float: left;
+    margin-right: 3px;
+}
+
+#product-detail .product-info ul.share li.last {
+    margin: 0;
+}
+
+#product-detail .product-info ul.share li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../../i/icon-share02.png) no-repeat 0 0;
+    text-indent: -100000px;
+}
+
+#product-detail .product-info ul.share li a.google {
+    background-position: -23px 0;
+}
+
+#product-detail .product-info ul.share li a.twitter {
+    background-position: -46px 0;
+}
+
+#product-detail .product-info ul.share li a.plurk {
+    background-position: -69px 0;
+}
+
+#product-detail .product-info ul.desc {
+    clear: both;
+    margin-bottom: 8px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e6e9eb;
+}
+
+#product-detail .product-info ul.desc li {
+    margin: 0 0 3px 0;
+    padding: 0 0 0 8px;
+    background: url(../../i/icon-dot01.png) no-repeat 0 center;
+    color: #393939;
+    font-size: 16px;
+}
+
+#product-detail .product-info .btn-trace {
+    float: right;
+    width: 105px;
+    height: 30px;
+    background: url(../../i/btn-trace.png) no-repeat 0 0;
+    text-indent: -100000px;
+}
+
+/**
+*
+* =pager
+*
+**/
+
+#product-detail .pager {
+    overflow: hidden;
+}
+
+#product-detail .pager a {
+    width: 99px;
+    height: 34px;
+    background: url(../../i/icon-pager.png) no-repeat 0 0;
+    text-indent: -100000px;
+}
+
+#product-detail .pager a.btn-prev {
+    float: left;
+}
+
+#product-detail .pager a.btn-next {
+    float: right;
+    background-position: 0 -34px;
+}

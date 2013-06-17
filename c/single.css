@@ -1,0 +1,21 @@
+/*-----------------------------------------------------------------------------
+ [TABLE OF CONTENTS]
+    +content-wrapper
+        +content-main
+        +content-sidebar
+-----------------------------------------------------------------------------*/
+
+/* +content-wrapper
+*----------------------------------------------------------------------------*/
+
+#content-main {
+    display: block;
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto 10px auto;
+}
+
+#content-sidebar {
+    display: none;
+}

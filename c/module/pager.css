@@ -1,0 +1,67 @@
+/*-----------------------------------------------------------------------------
+ [TABLE OF CONTENTS]
+    +content-main
+        =slogan
+        =table
+        =pager
+        =work-detail
+-----------------------------------------------------------------------------*/
+
+#content-main .article-content .pager {
+    position: relative;
+    overflow: hidden;
+}
+
+#content-main .article-content .pager ul {
+    position: relative;
+    left: 50%;
+    float: left;
+    overflow: visible !important;
+}
+
+#content-main .article-content .pager ul li {
+    position: relative;
+    right: 50%;
+    float: left;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+}
+
+#content-main .article-content .pager ul li a {
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 7px;
+    border: 1px solid #c6c6c6;
+    border-left: none;
+}
+
+#content-main .article-content .pager ul li.active a,
+#content-main .article-content .pager ul li a:hover {
+    background-color: #9b7c43;
+    color: #fff;
+    text-decoration: none;
+}
+
+#content-main .article-content .pager ul li a.first,
+#content-main .article-content .pager ul li a.last {
+    background-color: #9b7c43;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#content-main .article-content .pager ul li a.first {
+    border-left: 1px solid #c6c6c6;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    line-height: 
+}
+
+#content-main .article-content .pager ul li a.last {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}

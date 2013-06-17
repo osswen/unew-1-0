@@ -1,0 +1,31 @@
+/*-----------------------------------------------------------------------------
+ [TABLE OF CONTENTS]
+    =form
+-----------------------------------------------------------------------------*/
+
+/**
+*
+* =form
+*
+**/
+
+label {
+    cursor: pointer;
+}
+
+input[type="button"], input[type="reset"],
+input[type="submit"], input[type="image"] {
+    letter-spacing: 0.15mm;
+    cursor: pointer;
+}
+
+input[type="search"], input[type="text"], input[type="password"],
+textarea, select {
+    border: 1px double #c0c0c0;
+    background-color: #fff;
+    -webkit-appearance: none;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    display: none;
+}

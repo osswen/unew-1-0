@@ -1,0 +1,653 @@
+/*-----------------------------------------------------------------------------
+ [TABLE OF CONTENTS]
+    +common
+        =anchor
+        =clear,clearfix
+    +header
+        =logo
+        =search-bar
+        =keyword
+        =member-bar
+        =ad
+    +nav
+    +aside
+        =ad
+        =hot-info
+        =chick-wall
+        =secondhand-area
+        =film-competition
+        =banner-txt
+    +footer
+        =ad
+        =footer-nav
+        =logo
+        =content
+        =community
+-----------------------------------------------------------------------------*/
+
+/* +common
+*----------------------------------------------------------------------------*/
+
+body {
+    color: #333;
+    font: 12px/22px Microsoft JhengHei, LiHei Pro, PMingLiu, Arial, SimSun;
+}
+
+abbr, acronym {
+    cursor: help;
+}
+
+/**
+*
+* =anchor
+*
+**/
+
+a:visited {
+    color: #554538;
+    text-decoration: none;
+}
+
+a:link {
+    color: #554538;
+    text-decoration: none;
+}
+
+a:active {
+    color: #554538;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #554538;
+    text-decoration: underline;
+}
+
+/**
+*
+* =clear,clearfix
+*
+**/
+
+/* regular clearing apply to column that should drop below previous ones. */
+.clear {
+    clear: both;
+}
+
+/* this needs to be first because FF3 is now supporting this */
+.clearfix {
+    display: inline-block;
+}
+
+/* clearing floats without extra markup */
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    content: ".";
+}
+
+/* hides from IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/* end hide from IE-mac */
+
+/* +header
+*----------------------------------------------------------------------------*/
+
+#header {
+    height: 84px;
+    border-bottom: 3px solid #86a300;
+    background-color: #413e3e;
+}
+
+#header .header-wrap {
+    position: relative;
+    width: 960px;
+    height: 84px;
+    margin: 0 auto;
+}
+
+#header .header-wrap h3 {
+    display: none;
+}
+
+/**
+*
+* =logo
+*
+**/
+
+#header .logo  {
+    float: left;
+    margin-right: 85px;
+}
+
+#header .logo h2 a  {
+    display: block;
+    overflow: hidden;
+    width: 265px;
+    height: 80px;
+    background: url(../i/logo.jpg) no-repeat 0 0;
+    text-indent: -100000px;
+}
+
+/**
+*
+* =search-bar
+*
+**/
+
+#header #search-bar {
+    float: left;
+}
+
+#header #search-bar form {
+    width: 225px;
+    height: 19px;
+    margin-top: 26px;
+    padding-left: 5px;
+    background: url(../i/bg-search-bar.png) no-repeat 0 0;
+}
+
+#header #search-bar form .keyword {
+    float: left;
+    width: 168px;
+    height: 17px;
+    line-height: 17px;
+    border: none;
+}
+
+#header #search-bar form .btn-submit {
+    float: left;
+    width: 53px;
+    height: 16px;
+    border: none;
+    background: url(../i/btn-search.jpg) no-repeat 0 0;
+    text-indent: -100000px;
+    cursor: pointer;
+}
+
+/**
+*
+* =site-func
+*
+**/
+
+#header #site-func {
+    float: right;
+}
+
+#header #site-func ul {
+    overflow: hidden;
+}
+
+#header #site-func ul li {
+    float: left;
+    margin-right: 4px;
+    padding-right: 5px;
+    background: url(../i/line01.jpg) no-repeat right 9px;
+}
+
+#header #site-func ul li.last {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+#header #site-func ul li a {
+    color: #cdbcaf;
+    font-size: 10px;
+}
+
+/**
+*
+* =nav
+*
+**/
+
+#header #nav {
+    position: absolute;
+    top: 55px;
+    left: 330px;
+    width: 650px;
+}
+
+#header #nav ul li {
+    float: left;
+    padding: 0 0 4px 0;
+    background: url(../i/line02.png) no-repeat right center;
+}
+
+#header #nav ul li.last {
+    background: none;
+}
+
+#header #nav ul li a {
+    display: block;
+    width: 125px;
+    color: #ad9b8e;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*#header #nav ul li.active a,*/
+#header #nav ul li a:hover {
+    font-size: 21px;
+    text-decoration: none;
+}
+
+#header #nav ul li ul {
+    position: absolute;
+    top: 25px;
+    left: 23px;
+    z-index: 80;
+    overflow: hidden;
+    padding-left: 8px;
+    border: 1px solid #eee;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px;
+    background: #ffffff;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#EFEBDC));
+    background: -webkit-linear-gradient(#ffffff, #EFEBDC);
+    background: -moz-linear-gradient(#ffffff, #EFEBDC);
+    background: -ms-linear-gradient(#ffffff, #EFEBDC);
+    background: -o-linear-gradient(#ffffff, #EFEBDC);
+    background: linear-gradient(#ffffff, #EFEBDC);
+    -pie-background: linear-gradient(#ffffff, #EFEBDC);
+    behavior: url(PIE.htc);
+}
+
+#header #nav ul li ul li {
+    height: 25px;
+    line-height: 29px;
+    margin-right: 4px;
+    padding-right: 5px;
+    background: url(../i/line03.jpg) no-repeat right 11px;
+}
+
+#header #nav ul li ul li.last {
+    background: none;
+}
+
+#header #nav ul li ul li a {
+    width: auto;
+    height: 19px;
+    padding: 0;
+    color: #554538;
+    font-weight: normal;
+    font-size: 12px !important;
+}
+
+#header #nav ul li ul li a:hover {
+    font-weight: bold;
+}
+
+#header #nav ul li:hover ul {
+    display: block;
+}
+
+/* +content-wrapper
+*----------------------------------------------------------------------------*/
+
+#content-wrapper {
+    min-height: 800px;
+    height: auto !important;
+    height: 800px;
+}
+
+#content-wrapper .container {
+    position: relative;
+    overflow: hidden;
+    width: 960px;
+    margin: 0 auto;
+}
+
+/**
+*
+* =main-banner
+*
+**/
+
+#main-banner {
+    height: 200px;
+    background: url(../i/bg.jpg) repeat;
+    -webkit-box-shadow: #bbb 0px 5px 10px;
+    -moz-box-shadow: #bbb 0px 5px 10px;
+    box-shadow: #bbb 0px 5px 10px;
+}
+
+#main-banner .banner-wrap {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#main-banner .banner-wrap p {
+    position: relative;
+    z-index: 10;
+    float: left;
+    margin-top: 100px;
+}
+
+#main-banner .banner-wrap p img {
+    clear: both;
+    float: left;
+}
+
+#main-banner .banner-wrap .banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* +content-main
+*----------------------------------------------------------------------------*/
+
+#content-main {
+    position: relative;
+    overflow: hidden;
+    padding: 30px 0 0 0;
+}
+
+/**
+*
+* =crumb
+*
+**/
+
+#content-main #crumb {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    float: right;
+}
+
+#content-main #crumb h3 {
+    display: none;
+}
+
+#content-main #crumb ul {
+    overflow: hidden;
+}
+
+#content-main #crumb ul li {
+    float: left;
+    margin-right: 3px;
+    padding: 0 12px 0 0;
+    background: url(../i/icon-arrow02.png) no-repeat right 8px;
+}
+
+#content-main #crumb ul li a {
+    color: #a1a1a1;
+}
+
+#content-main #crumb ul li.last {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+#content-main #crumb ul li.last a {
+    font-weight: bold;
+}
+
+/**
+*
+* =article-content
+*
+**/
+
+#content-main .article-content {
+    float: right;
+    width: 700px;
+    margin: 0 auto;
+}
+
+#content-main .article-content h2 {
+    overflow: hidden;
+    margin-bottom: 40px;
+    padding: 0 0 5px 0;
+    background: url(../i/line06.png) no-repeat center bottom;
+}
+
+#content-main .article-content h2 em {
+    float: left;
+    margin-right: 6px;
+    padding: 2px 0 0 10px;
+    background: url(../i/icon-title-quote.png) no-repeat 0 0;
+    color: #9b7c43;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+#content-main .article-content h2 span {
+    float: left;
+    margin: 11px 0 0;
+    color: #929292;
+    font: bold 12px Arial;
+}
+
+#content-main .article-content blockquote {
+    padding: 0 0 0 10px;
+    color: #505050;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+#content-main .article-content blockquote p {
+    margin-bottom: 30px;
+}
+
+#content-main .article-content blockquote p em {
+    color: #9b7c43;
+    font-size: 36px;
+}
+
+#content-main .article-content blockquote p img {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+/* +content-sidebar
+*----------------------------------------------------------------------------*/
+
+#content-sidebar {
+    width: 212px;
+    padding: 30px 0 0 28px;
+}
+
+/**
+*
+* =cat-nav
+*
+**/
+
+#content-sidebar #cat-nav {
+    width: 193px;
+}
+
+#content-sidebar #cat-nav h3 {
+    display: none;
+}
+
+#content-sidebar #cat-nav p {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 0 0 6px;
+    background: #9b7c43 url(../i/icon-plus02.png) no-repeat 165px 7px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#content-sidebar #cat-nav ul li {
+    background: url(../i/line05.png) no-repeat 0 bottom;
+}
+
+#content-sidebar #cat-nav ul li a {
+    display: block;
+    height: 33px;
+    line-height: 33px;
+    color: #717171;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#content-sidebar #cat-nav ul li        a:hover,
+#content-sidebar #cat-nav ul li.active a {
+    background: url(../i/icon-arrow01.png) no-repeat right center;
+    color: #9b7c43;
+    text-decoration: none;
+}
+
+/**
+*
+* =company-info
+*
+**/
+
+#content-sidebar #company-info {
+    margin: 50px 0 0;
+    padding: 0 20px 0 0;
+}
+
+#content-sidebar #company-info h3 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cfcfcf;
+    color: #9b7c43;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#content-sidebar #company-info ul {
+    padding: 5px 5px 0;
+}
+
+#content-sidebar #company-info ul li {
+    overflow: hidden;
+    margin-bottom: 5px;
+    line-height: 18px;
+}
+
+#content-sidebar #company-info ul li span {
+    float: left;
+    width: 60px;
+}
+
+#content-sidebar #company-info ul li em {
+    float: left;
+    width: 120px;
+}
+
+#content-sidebar #company-info iframe {
+    border: 1px solid #ccc;
+}
+
+/* +footer
+*----------------------------------------------------------------------------*/
+
+#footer {
+    height: 85px;
+    background-color: #413e3e;
+}
+
+#footer .footer-wrap {
+    width: 960px;
+    height: 74px;
+    margin: 0 auto;
+    padding: 10px 0 0;
+}
+
+#footer .footer-wrap h3 {
+    display: none;
+}
+
+/**
+*
+* =footer-link
+*
+**/
+
+#footer .footer-link {
+    float: left;
+    color: #cdbcaf;
+}
+
+#footer .footer-link ul {
+    overflow: hidden;
+}
+
+#footer .footer-link ul li {
+    float: left;
+    margin-right: 15px;
+    padding-right: 15px;
+    background: url(../i/line04.jpg) no-repeat right 5px;
+}
+
+#footer .footer-link ul li.last {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+#footer .footer-link ul li a {
+    color: #cdbcaf;
+}
+
+/**
+*
+* =web-share
+*
+**/
+
+#footer .web-share {
+    float: right;
+    color: #cdbcaf;
+}
+
+#footer .web-share p {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+#footer .web-share ul {
+    float: right;
+}
+
+#footer .web-share ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+#footer .web-share ul li.last {
+    margin: 0;
+}
+
+#footer .web-share ul li a {
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url(../i/icon-share.png) no-repeat 0 0;
+    text-indent: -100000px;
+}
+
+#footer .web-share ul li a.twitter {
+    background-position: -27px 0;
+}
+
+#footer .web-share ul li a.google {
+    background-position: -54px 0;
+}

@@ -1,0 +1,72 @@
+/*-----------------------------------------------------------------------------
+ [TABLE OF CONTENTS]
+    +common
+    +header
+    +content-wrapper
+        =content-main
+        =content-sidebar
+    +footer
+-----------------------------------------------------------------------------*/
+
+body {
+    background: url(../../i/bg.jpg) repeat;
+}
+
+#content-main {
+    position: relative;
+    height: 700px;
+    background: url(../../i/bg-index.png) no-repeat center;
+    text-align: center;
+}
+
+#content-main .mask {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 30%;
+    height: 142px;
+    background: url(../../i/bg-slogan.png) repeat;
+}
+
+/**
+*
+* =unew-slogan
+*
+**/
+
+#unew-slogan {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 50%;
+    height: 132px;
+    padding: 10px 0 0;
+    background: url(../../i/bg-slogan.png) repeat;
+    text-align: left;
+}
+
+#unew-slogan h1 {
+    padding: 0 0 0 20px;
+    color: #050200;
+    font: 42px Arial;
+}
+
+#unew-slogan p {
+    margin-bottom: 3px;
+    padding: 0 0 0 20px;
+    color: #090909;
+    font-size: 16px;
+}
+
+#unew-slogan p.service-item {
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#unew-slogan p.service-item span {
+    float: left;
+    margin-right: 15px;
+    padding: 0 0 0 10px;
+    background: url(../../i/icon-plus.png) no-repeat 0 8px;
+}

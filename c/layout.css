@@ -1,0 +1,57 @@
+/*-----------------------------------------------------------------------------
+ [TABLE OF CONTENTS]
+    +common
+    +header
+    +content-wrapper
+        =content-main
+        =content-sidebar
+    +footer
+-----------------------------------------------------------------------------*/
+
+/* +common
+*----------------------------------------------------------------------------*/
+
+html, body {
+    margin: 0;
+    text-align: center;
+}
+
+/* +header
+*----------------------------------------------------------------------------*/
+
+#header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* +content-wrapper
+*----------------------------------------------------------------------------*/
+
+#content-wrapper {
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#content-main {
+    overflow: hidden;
+    float: right;
+    width: 720px;
+}
+
+#content-sidebar {
+    float: left;
+    width: 240px;
+}
+
+/* +footer
+*----------------------------------------------------------------------------*/
+
+#footer {
+    clear: both;
+    width: 100%;
+    text-align: left;
+}

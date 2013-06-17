@@ -1,0 +1,327 @@
+/*-----------------------------------------------------------------------------
+ [TABLE OF CONTENTS]
+    +content-main
+        =about-us
+        =service
+        =group
+        =equipment
+        =map
+-----------------------------------------------------------------------------*/
+
+#content-wrapper {
+    background: url(../../i/bg-about.png) no-repeat center 200px;
+}
+
+/**
+*
+* =about-us
+*
+**/
+
+#content-main #about-us {
+    background: url(../../i/bg-photo01.png) no-repeat right 240px;
+}
+
+#content-main #about-us .slogan {
+    width: 492px;
+    height: 95px;
+    margin-bottom: 40px;
+    padding: 10px 0 0 20px;
+    background: url(../../i/icon-quote.png) no-repeat 0 0;
+}
+
+#content-main #about-us .slogan h3 {
+    color: #717171;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+#content-main #about-us .slogan h4 {
+    color: #8e9e20;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+#content-main #about-us .slogan h5 {
+    color: #9b7c43;
+    font: 18px/150% "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+/**
+*
+* =service
+*
+**/
+
+#service .slogan {
+    height: 200px;
+    background: url(../../i/photo02.png) no-repeat right -15px;
+}
+
+#service .slogan h3 {
+    width: 460px;
+    color: #9b7c43;
+    font: 30px/140% "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+#service .slogan h4 {
+    color: #717171;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+#service .slogan h5 {
+    color: #8e9e20;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+#service blockquote ul li {
+    margin-bottom: 30px;
+}
+
+#service blockquote ul li h3 {
+    padding-left: 18px;
+    background: url(../../i/icon-circle01.png) no-repeat 0 6px;
+    color: #9b7c43;
+    font-size: 18px;
+}
+
+#service blockquote ul li p {
+    margin: 0;
+    padding-left: 19px;
+    color: #717171;
+    font-size: 16px;
+}
+
+/**
+*
+* =group
+*
+**/
+
+#group blockquote {
+    position: releative;
+}
+
+#group blockquote img.steps {
+    position: absolute;
+    left: 5px;
+    bottom: 100px;
+    z-index: 1;
+}
+
+#group .slogan {
+    height: 200px;
+    background: url(../../i/photo04.png) no-repeat right 0;
+}
+
+#group .slogan h3 {
+    color: #717171;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+#group .slogan h4 {
+    color: #8e9e20;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+#group .slogan h5 {
+    width: 400px;
+    color: #9b7c43;
+    font: 21px/140% "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+#group blockquote ul {
+    position: releative;
+    z-index: 5;
+}
+
+#group blockquote ul li {
+    margin-bottom: 30px;
+}
+
+#group blockquote ul li.indent {
+    margin-left: 300px;
+}
+
+#group blockquote ul li h3 {
+    padding-left: 18px;
+    background: url(../../i/icon-circle01.png) no-repeat 0 6px;
+    color: #9b7c43;
+    font-size: 18px;
+}
+
+#group blockquote ul li p {
+    margin: 0;
+    padding-left: 19px;
+    color: #717171;
+    font-size: 16px;
+}
+
+/**
+*
+* =equipment
+*
+**/
+
+#equipment .slogan {
+    margin-bottom: 20px;
+    padding-left: 64px;
+    background: url(../../i/icon01.png) no-repeat 20px 0;
+}
+
+#equipment .slogan h3 {
+    margin-bottom: 3px;
+    color: #8e9e20;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#equipment .slogan h4 {
+    color: #9b7c43;
+    font: 18px "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+#equipment .gallery {
+    overflow: hidden;
+    width: 660px;
+    padding: 0 8px;
+    margin-bottom: 40px;
+}
+
+#equipment .gallery .main-photo {
+    position: relative;
+    width: 646px;
+    height: 346px;
+    margin-bottom: 6px;
+    border: 7px solid #e4e4e4;
+}
+
+#equipment .gallery .main-photo .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 630px;
+    height: 47px;
+    padding: 4px 8px 0 8px;
+    background: url(../../i/bg-gallery.png) repeat;
+    color: #fff;
+}
+
+#equipment .gallery .main-photo .content h3 {
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+#equipment .gallery .main-photo .content p {
+    font-size: 12px;
+}
+
+#equipment .gallery .list {
+    position: relative;
+    height: 82px;
+}
+
+#equipment .gallery .list .prev,
+#equipment .gallery .list .next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 5px;
+    height: 9px;
+    margin: -5px 0 0 0;
+    background: url(../../i/icon-arrow03.png) no-repeat 0 0;
+    text-indent: -100000px;
+}
+
+#equipment .gallery .list .prev {
+    left: -8px;
+}
+
+#equipment .gallery .list .next {
+    right: -8px;
+    background-position: -5px 0;
+}
+
+#equipment .gallery .list ul {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px;
+}
+
+#equipment .gallery .list ul li {
+    float: left;
+    width: 77px;
+    height: 82px;
+    margin-right: 6px;
+    background: url(../../i/bg-gallery-list.png) no-repeat -77px 0;
+}
+
+#equipment .gallery .list ul li a {
+    display: block;
+    margin: 9px 0 0 4px;
+}
+
+#equipment .gallery .list ul li a img {
+    display: block;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+#equipment .gallery .list ul li.active {
+    background-position: 0 0;
+}
+
+#equipment .gallery .list ul li a img:hover,
+#equipment .gallery .list ul li.active a img {
+    background-color: transparent;
+    opacity: 1;
+}
+
+/**
+*
+* =map
+*
+**/
+
+#map {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#map iframe {
+    margin-bottom: 20px;
+    border: 7px solid #e4e4e4;
+}
+
+#map ol {
+    padding-left: 20px;
+}
+
+#map ol li {
+    margin-bottom: 20px;
+    color: #9b7c43;
+    text-align: left;
+}
+
+#map ol li h3 {
+    margin-bottom: 3px;
+    font-size: 24px;
+}
+
+#map ol li p {
+    padding-left: 28px;
+    font-size: 18px;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>DCView</title>
+<link type="text/css" rel="stylesheet" href="c/reset.css" media="screen, projection" />
+<link type="text/css" rel="stylesheet" href="c/layout.css" media="screen, projection" />
+<link type="text/css" rel="stylesheet" href="c/style.css" media="screen, projection" />
+<link type="text/css" rel="stylesheet" href="c/page/contact.css" media="screen, projection" />
+<script type="text/javascript" src="j/jquery.min.js"></script>
+<script type="text/javascript" src="j/jquery.hoverIntent.min.js"></script>
+<script type="text/javascript" src="j/jquery.superfish.min.js"></script>
+</head>
+<body>
+
+<!--============================== header start ==============================-->
+<div id="header">
+<div class="header-wrap">
+
+<div class="logo">
+<h2><a href="index.html" title="允新精品櫥櫃設計">允新精品櫥櫃設計<img src="i/logo.jpg" alt="允新精品櫥櫃設計" width="265" height="80" /></a></h2>
+</div>
+
+<div id="search-bar">
+<h3>站台搜尋</h3>
+<form name="siteSearchForm" id="siteSearchForm" action="search-list.html" method="get">
+<input type="text" name="k" maxlength="50" class="length-s keyword" />
+<input type="submit" value="Search" title="Search" class="btn-submit" />
+</form>
+</div>
+
+<div id="site-func">
+<h3>網站選單</h3>
+<ul>
+<li><a href="index.html">回首頁</a></li>
+<li><a href="inquiry-list.html">追蹤清單</a></li>
+<li class="last"><a href="sitemap.html">網站導覽</a></li>
+</ul>
+</div>
+
+<script type="text/javascript">
+<!-- <![CDATA[
+$(function() {
+    $('ul.sf-menu').superfish({
+        hoverClass:  'sfhover',
+        pathClass:   'active',
+        autoArrows:  false,
+        dropShadows: false
+    });
+});
+// ]]> -->
+</script>
+
+<div id="nav">
+<h3>網站主選單</h3>
+<ul class="sf-menu">
+    <li class="active"><a href="#">關於允新</a>
+        <ul>
+            <li><a href="about.html">公司簡介</a></li>
+            <li><a href="service.html">服務項目</a></li>
+            <li><a href="group.html">服務團隊</a></li>
+            <li class="last"><a href="map.html">交通位置</a></li>
+        </ul>
+    </li>
+    <li><a href="product-list.html">產品介紹</a>
+        <ul>
+            <li><a href="product-list.html">展示架系列</a></li>
+            <li><a href="product-list.html">玻璃櫃系列</a></li>
+            <li><a href="product-list.html">飾品櫃系列</a></li>
+            <li><a href="product-list.html">櫃檯系列</a></li>
+            <li><a href="product-list.html">賣場陳列</a></li>
+            <li><a href="product-list.html">子母桌</a></li>
+            <li><a href="product-list.html">中島櫃</a></li>
+            <li><a href="product-list.html">壁櫃系列</a></li>
+            <li class="last"><a href="product-list.html">其他商品</a></li>
+        </ul>
+    </li>
+    <li><a href="work-list.html">近期作品</a></li>
+    <li><a href="map.html">交通位置</a></li>
+    <li class="last"><a href="contact.html">聯絡我們</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+<!--============================== header close ==============================-->
+
+<!--============================== content-wrapper start =====================-->
+<div id="content-wrapper">
+
+<div id="main-banner">
+<div class="banner-wrap">
+<p><img src="i/photo-slogan.png" alt="Design Your Best Life 豐富實務經驗 為您規劃設計專屬於您的店面賣場" /></p>
+<img src="i/photo-banner.png" alt="" class="banner" />
+</div>
+</div>
+
+<div class="container">
+<!--============================== content-main start ========================-->
+<div id="content-main">
+
+<div id="crumb">
+<h3>頁面路徑選單</h3>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li class="last"><a href="contact.html">聯絡我們</a></li>
+</ul>
+</div>
+
+<div id="contact" class="article-content">
+<h2><em>聯絡我們</em><span>Contact us</span></h2>
+<div class="slogan">
+<h5>U-New Cupboard Design Professional Design For Your Custom</h5>
+<h3>感謝您願意提供寶貴的意見給我們</h3>
+<h4>允新珍惜每一次與您的交流。請您留下您的資訊與需求，<br />
+我們將立即為您處理與服務。<br />
+若您有任何問題或意見，也可直接來電允新的客服專線，<br />
+將有專人為您提供解答或服務，感謝您的支持與愛護。</h4>
+<p><acronym title="Required field" class="mark-required">*</acronym>為必填欄位</p>
+</div>
+
+<form name="contactForm" id="contactForm" method="get" action="">
+<fieldset>
+<p>
+<label><acronym title="Required field" class="mark-required">*</acronym>問題類別</label>
+<select name="category" id="category" size="1">
+<option value="">產品問題</option>
+</select>
+</p>
+<p>
+<label for="name"><acronym title="Required field" class="mark-required">*</acronym>姓　　名</label>
+<input type="text" name="name" id="name" maxlength="100" value="" />
+</p>
+<p>
+<label for="officeName">公司名稱</label>
+<input type="text" name="officeName" id="officeName" maxlength="100" value="" />
+</p>
+<p>
+<label for="tel">聯絡電話</label>
+<input type="text" name="telCode" id="telCode" maxlength="3" value="" class="length-xs" /> - 
+<input type="text" name="tel" id="tel" maxlength="8" value="" />
+</p>
+<p>
+<label for="fax">傳真號碼</label>
+<input type="text" name="faxCode" id="faxCode" maxlength="3" value="" class="length-xs" /> - 
+<input type="text" name="fax" id="fax" maxlength="8" value="" />
+</p>
+<p>
+<label for="mobile"><acronym title="Required field" class="mark-required">*</acronym>手機號碼</label>
+<input type="text" name="mobile" id="mobile" maxlength="100" value="" />
+</p>
+<p>
+<label for="email"><acronym title="Required field" class="mark-required">*</acronym>電子郵件</label>
+<input type="text" name="email" id="email" maxlength="100" value="" />
+</p>
+<p>
+<label><acronym title="Required field" class="mark-required">*</acronym>詢問內容</label>
+<textarea name="question" id="question" cols="40" rows="4"></textarea>
+</p>
+<p>
+<label for="captcha"><acronym title="Required field" class="mark-required">*</acronym>電子郵件</label>
+<input type="text" name="captcha" id="captcha" maxlength="4" value="" class="length-s" />
+<a href="#"><img src="i/captcha-s.gif" alt="" width="60" height="20" border="0" />重新產生</a>
+</p>
+</fieldset>
+<fieldset class="button">
+<input type="submit" value="送出" class="btn-submit" />
+<input type="reset" value="重填" class="btn-reset" />
+</fieldset>
+</form>
+</div>
+
+</div>
+<!--============================== content-main close ========================-->
+
+<!--============================== content-sidebar start =====================-->
+<div id="content-sidebar">
+
+<div id="cat-nav">
+<h3>分類選單</h3>
+<ul>
+<li class="active"><a href="contact.html">聯絡我們</a></li>
+</ul>
+</div>
+
+<div id="company-info">
+<h3>允新精品櫥櫃設計</h3>
+<ul>
+<li><span>地　　址：</span><em>台南市安南區環福街106巷102號</em></li>
+<li><span>服務專線：</span><em>06-3563238</em></li>
+<li><span>傳　　真：</span><em>06-3564398</em></li>
+<li><span>客服信箱：</span><em><a href="mailto:yao1973@so-net.net.tw">yao1973@so-net.net.tw</a></em></li>
+</ul>
+<iframe width="194" height="126" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=zh-TW&amp;geocode=&amp;q=%E5%8F%B0%E7%81%A3%E5%8F%B0%E5%8D%97%E5%B8%82%E5%AE%89%E5%8D%97%E5%8D%80%E7%92%B0%E7%A6%8F%E8%A1%97106%E5%B7%B7102%E8%99%9F&amp;aq=t&amp;sll=37.0625,-95.677068&amp;sspn=61.19447,135.263672&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=709%E5%8F%B0%E7%81%A3%E5%8F%B0%E5%8D%97%E5%B8%82%E5%AE%89%E5%8D%97%E5%8D%80%E7%92%B0%E7%A6%8F%E8%A1%97106%E5%B7%B7&amp;ll=23.071624,120.224405&amp;spn=0.035337,0.066047&amp;z=15&amp;output=embed&amp;iwloc=near"></iframe>
+</div>
+
+</div>
+<!--============================== content-sidebar close =====================-->
+</div>
+
+</div>
+<!--============================== content-wrapper close =====================-->
+
+<!--============================== footer start ==============================-->
+<div id="footer">
+<div class="footer-wrap">
+<div class="footer-link">
+<h3>網站主選單</h3>
+<ul>
+<li><a href="#">公司簡介</a></li>
+<li><a href="#">最新消息</a></li>
+<li><a href="#">服務項目</a></li>
+<li><a href="#">案例介紹</a></li>
+<li><a href="#">交通位置</a></li>
+<li class="last"><a href="#">聯絡我們</a></li>
+</ul>
+
+<p class="company-info">允新精品櫥櫃設計 台南市安南區環福街106巷102號  TEL：06-3563238 / FAX：06-3564398 / 客服信箱：yao1973@so-net.net.tw</p>
+<p class="copyright">Copyright &copy; 2013 u-new company. All rights reserved.</p>
+</div>
+
+<div class="web-share">
+<h3>網站社群功能</h3>
+<p>總瀏覽<span>19885</span>人次</p>
+<ul>
+<li><a href="#" class="facebook">facebook</a></li>
+<li><a href="#" class="twitter">twitter</a></li>
+<li class="last"><a href="#" class="google">google</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!--============================== footer close ==============================-->
+
+</body>
+</html>
