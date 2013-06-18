@@ -229,6 +229,8 @@
 
 #equipment .gallery .list {
     position: relative;
+    overflow: visible !important;
+    width: 660px !important;
     height: 82px;
 }
 
@@ -236,12 +238,14 @@
 #equipment .gallery .list .next {
     display: block;
     position: absolute;
-    top: 50%;
+    top: 5px;
+    z-index: 100;
     width: 5px;
-    height: 9px;
-    margin: -5px 0 0 0;
-    background: url(../../i/icon-arrow03.png) no-repeat 0 0;
+    height: 77px;
+    margin: 0;
+    background: url(../../i/icon-arrow03.png) no-repeat 0 center;
     text-indent: -100000px;
+    outline: none;
 }
 
 #equipment .gallery .list .prev {
@@ -250,15 +254,17 @@
 
 #equipment .gallery .list .next {
     right: -8px;
-    background-position: -5px 0;
+    background-position: -5px center;
+}
+
+#equipment .gallery .list .wrap {
+    overflow: hidden;
+    width: 660px;
+    height: 82px;
 }
 
 #equipment .gallery .list ul {
     overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 700px;
 }
 
 #equipment .gallery .list ul li {
@@ -271,11 +277,14 @@
 
 #equipment .gallery .list ul li a {
     display: block;
-    margin: 9px 0 0 4px;
+    margin: 10px 0 0 5px;
+    outline: none;
 }
 
 #equipment .gallery .list ul li a img {
     display: block;
+    width: 67px;
+    height: 67px;
     background-color: #000;
     opacity: 0.3;
 }

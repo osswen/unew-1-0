@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>DCView</title>
+<title>允新精品櫥櫃設計</title>
 <link type="text/css" rel="stylesheet" href="c/reset.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/layout.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/style.css" media="screen, projection" />
@@ -10,6 +10,7 @@
 <script type="text/javascript" src="j/jquery.min.js"></script>
 <script type="text/javascript" src="j/jquery.hoverIntent.min.js"></script>
 <script type="text/javascript" src="j/jquery.superfish.min.js"></script>
+<script type="text/javascript" src="j/jquery.jcarousellite.min.js"></script>
 </head>
 <body>
 
@@ -115,9 +116,35 @@ $(function() {
 <h4>U-New Cupboard Design Professional Design For Your Custom</h4>
 </div>
 
+<script type="text/javascript">
+<!-- <![CDATA[
+$(function() {
+    //$('.gallery .list ul').data('length', $('.gallery .list ul li').length);
+    $('.gallery .list').jCarouselLite({
+        btnNext: '.gallery .list .next',
+        btnPrev: '.gallery .list .prev',
+        circular: false
+    });
+    //$('.gallery .list ul').width($('.gallery .list ul').data('length') * 83);
+
+    $('.gallery .list ul li a').click(function () {
+        var imgSrc = $(this).children('img').attr('src'),
+            title  = $(this).parent('li').data('title');
+        $('.gallery .list ul li').removeClass('active');
+        $(this).parent('li').addClass('active');
+        $('.gallery .main-photo img').attr('src', imgSrc);
+        $('.gallery .main-photo .content').slideUp();
+        $('.gallery .main-photo .content').slideDown();
+        $('.gallery .main-photo .content h3').text(title);
+        return false;
+    });
+});
+// ]]> -->
+</script>
+
 <div class="gallery">
 <div class="main-photo">
-<img src="i/photo-equip01.jpg" alt="" />
+<img src="i/photo-equip01.jpg" alt="" width="646" height="346" />
 <div class="content">
 <h3>CNC電腦雕刻機</h3>
 <p>一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</p>
@@ -127,16 +154,20 @@ $(function() {
 <div class="list">
 <a href="#" class="prev">prev</a>
 <a href="#" class="next">next</a>
+<div class="wrap">
 <ul>
-<li class="active"><a href="#"><img src="i/photo-gallery01.jpg" alt="" /></a></li>
-<li><a href="#"><img src="i/photo-gallery01.jpg" alt="" /></a></li>
-<li><a href="#"><img src="i/photo-gallery01.jpg" alt="" /></a></li>
-<li><a href="#"><img src="i/photo-gallery01.jpg" alt="" /></a></li>
-<li><a href="#"><img src="i/photo-gallery01.jpg" alt="" /></a></li>
-<li><a href="#"><img src="i/photo-gallery01.jpg" alt="" /></a></li>
-<li><a href="#"><img src="i/photo-gallery01.jpg" alt="" /></a></li>
-<li><a href="#"><img src="i/photo-gallery01.jpg" alt="" /></a></li>
+<li class="active" data-title="CNC電腦雕刻機"><a href="#"><img src="i/photo-equip01.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題一"><a href="#"><img src="i/photo05.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="第二則標題"><a href="#"><img src="i/photo06.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題三"><a href="#"><img src="i/photo05.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="第四則標題"><a href="#"><img src="i/photo06.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題五"><a href="#"><img src="i/photo05.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="第六則標題"><a href="#"><img src="i/photo06.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題七"><a href="#"><img src="i/photo05.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="第八則標題"><a href="#"><img src="i/photo06.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題九"><a href="#"><img src="i/photo05.jpg" alt="" width="67" height="67" /></a></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
