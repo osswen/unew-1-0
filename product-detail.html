@@ -6,10 +6,12 @@
 <link type="text/css" rel="stylesheet" href="c/reset.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/layout.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/style.css" media="screen, projection" />
+<link type="text/css" rel="stylesheet" href="c/module/jquery.lightbox.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/page/product.css" media="screen, projection" />
 <script type="text/javascript" src="j/jquery.min.js"></script>
 <script type="text/javascript" src="j/jquery.hoverIntent.min.js"></script>
 <script type="text/javascript" src="j/jquery.superfish.min.js"></script>
+<script type="text/javascript" src="j/jquery.lightbox.min.js"></script>
 </head>
 <body>
 
@@ -112,7 +114,59 @@ $(function() {
 <script type="text/javascript">
 <!-- <![CDATA[
 $(function() {
+    $('#product-detail .photo-list a.lightbox').lightBox({
+        overlayBgColor: '#000',
+        overlayOpacity: 0.6,
+        imageLoading: 'i/lightbox/lightbox-ico-loading.gif',
+        imageBtnPrev: 'i/lightbox/lightbox-btn-prev.gif',
+        imageBtnNext: 'i/lightbox/lightbox-btn-next.gif',
+        imageBtnClose: 'i/lightbox/lightbox-btn-close.gif',
+        imageBlank: 'i/lightbox/lightbox-blank.gif',
+        txtImage: 'Image',
+        txtOf: 'of'
+    });
 
+    // 推至Facebook
+    $('#product-detail .facebook').click(function() {
+        var u = location.href;
+        var t = $('.article-content h1').text();
+        var url = 'http://www.facebook.com/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t);
+        window.open(url);
+        return false;
+    });
+
+    // 推至Google
+    $('#product-detail .google').click(function() {
+        var title = $('#product-detail .product-info h1').text();
+        var abstract = $('#product-detail .product-desc blockquote').text();
+        if (typeof abstract === 'undefined') { abstract = ''; }
+        var status = location.href + ' (' + title + ') ' + abstract;
+        var url = 'https://plus.google.com/share?url=' + encodeURIComponent(status);
+        window.open(url);
+        return false;
+    });
+
+    // 推至Twitter
+    $('#product-detail .twitter').click(function() {
+        var title = $('#product-detail .product-info h1').text();
+        var abstract = $('#product-detail .product-desc blockquote').text();
+        if (typeof abstract === 'undefined') { abstract = ''; }
+        var status = location.href + ' (' + title + ') ' + abstract;
+        var url = 'http://twitter.com/home/?status=' + encodeURIComponent(status);
+        window.open(url);
+        return false;
+    });
+
+    // 推至噗浪
+    $('#product-detail .plurk').click(function() {
+        var title = $('#product-detail .product-info h1').text();
+        var abstract = $('#product-detail .product-desc blockquote').text();
+        if (typeof abstract === 'undefined') { abstract = ''; }
+        var status = location.href + ' (' + title + ') ' + abstract;
+        var url = 'http://www.plurk.com/?qualifier=shares&status=' + encodeURIComponent(status);
+        window.open(url);
+        return false;
+    });
 });
 // ]]> -->
 </script>
@@ -122,12 +176,12 @@ $(function() {
 
 <div class="wrap">
 <div class="photo-list">
-<img src="i/photo06.jpg" alt="" width="385" height="300" class="main" />
+<a href="i/photo06.jpg" class="lightbox"><img src="i/photo06.jpg" alt="" width="385" height="300" class="main" /></a>
 <ul>
-<li><a href="#"><img src="i/photo05.jpg" alt="" width="90" height="90" /></a></li>
-<li><a href="#"><img src="i/photo-equip01.jpg" alt="" width="90" height="90" /></a></li>
-<li><a href="#"><img src="i/photo-product01.jpg" alt="" width="90" height="90" /></a></li>
-<li class="last"><a href="#"><img src="i/photo-gallery01.jpg" alt="" width="90" height="90" /></a></li>
+<li><a href="i/photo05.jpg" class="lightbox"><img src="i/photo05.jpg" alt="" width="90" height="90" /></a></li>
+<li><a href="i/photo-equip01.jpg" class="lightbox"><img src="i/photo-equip01.jpg" alt="" width="90" height="90" /></a></li>
+<li><a href="i/photo-product01.jpg" class="lightbox"><img src="i/photo-product01.jpg" alt="" width="90" height="90" /></a></li>
+<li class="last"><a href="i/photo-gallery01.jpg" class="lightbox"><img src="i/photo-gallery01.jpg" alt="" width="90" height="90" /></a></li>
 </ul>
 </div>
 
@@ -147,6 +201,13 @@ $(function() {
 </ul>
 <a href="#" class="btn-trace">加入追蹤清單</a>
 </div>
+</div>
+
+<div class="product-desc">
+<h3>商品詳細說明</h3>
+<blockquote>
+<p>暫無說明</p>
+</blockquote>
 </div>
 
 <div class="pager">
