@@ -54,6 +54,12 @@
     text-align: center;
 }
 
+#product-list ul li p.hover {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #product-list ul li p a {
     color: #fff;
 }

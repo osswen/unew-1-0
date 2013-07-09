@@ -79,6 +79,11 @@
     vertical-align: middle;
 }
 
+#work-list table tr.hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
 #work-list table td {
     padding: 7px 0;
     border-bottom: 1px dotted #9b7c43;

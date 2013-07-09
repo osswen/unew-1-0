@@ -15,6 +15,7 @@
 <script type="text/javascript" src="j/jquery.min.js"></script>
 <script type="text/javascript" src="j/jquery.hoverIntent.min.js"></script>
 <script type="text/javascript" src="j/jquery.superfish.min.js"></script>
+<script type="text/javascript" src="j/jquery.bigtarget.min.js"></script>
 <script type="text/javascript" src="j/jquery.disable.min.js"></script>
 </head>
 <body>
@@ -56,6 +57,10 @@ $(function () {
         autoArrows:  false,
         dropShadows: false
     });
+    $('#nav ul > li > ul > li > a').bigTarget({
+        hoverClass: 'hover',
+        clickZone: 'li:eq(0)'
+    });
 });
 // ]]> -->
 </script>
@@ -63,7 +68,7 @@ $(function () {
 <div id="nav">
 <h3>網站主選單</h3>
 <ul class="sf-menu">
-<li class="active"><a href="#">關於允新</a>
+<li class="active"><a href="about.html">關於允新</a>
     <ul>
         <li><a href="about.html">公司簡介</a></li>
         <li><a href="service.html">服務項目</a></li>
@@ -122,17 +127,29 @@ $(function () {
 <h3>頁面路徑選單</h3>
 <ul>
 <li><a href="index.html">HOME</a></li>
-<li class="last"><a href="work-list.html">近期作品</a></li>
+<li><a href="work-list.html">近期作品</a></li>
+<li class="last"><a href="work-list.html">室內裝潢</a></li>
 </ul>
 </div>
 
 <div id="work-list" class="article-content">
-<h2><em>近期作品</em><span>Works（共80筆）</span></h2>
+<h2><em>室內裝潢</em><span>Indoor decorations（共11筆，第<strong>1</strong>/2頁）</span></h2>
 <div class="slogan">
 <h3>評估、規劃、設計、創新、製造、施工</h3>
 <h4>最富實力經驗的服務團隊</h4>
 <h5>U-New Cupboard Design Professional Design For Your Custom</h5>
 </div>
+
+<script type="text/javascript">
+// <![CDATA[
+$(function () {
+    $('#work-list table td.overall a').bigTarget({
+        hoverClass: 'hover',
+        clickZone: 'tr:eq(0)'
+    });
+});
+// ]]> -->
+</script>
 
 <table>
 <thead>
@@ -222,7 +239,7 @@ $(function () {
 <div id="cat-nav">
 <h3>邊欄分類選單</h3>
 <ul>
-<li><a href="work-list.html">室內裝潢</a></li>
+<li class="active"><a href="work-list.html">室內裝潢</a></li>
 <li><a href="work-list.html">實例比對</a></li>
 <li><a href="work-list.html">店舖設計</a></li>
 <li><a href="work-list.html">店面設計</a></li>
@@ -271,16 +288,29 @@ $(function () {
 <script type="text/javascript">
 // <![CDATA[
 $(function () {
-    var footer = $("#footer"),
-        pos = footer.position(),
-        height = $(window).height();
-    height = height - pos.top;
-    height = height - footer.height();
-    if (height > 0) {
-        footer.css({
-            'margin-top': height + 'px'
-        });
+    function autoStickyFooter() {
+        var footer = $("#footer"),
+            pos = footer.position(),
+            height = $(window).height();
+        height = height - pos.top;
+        height = height - footer.height();
+        if (height > 0) {
+            footer.css({
+                'margin-top': height + 'px'
+            });
+        }
     }
+    autoStickyFooter();
+
+    var resizeTimer = null;
+    $(window).resize(function () {
+        if (resizeTimer) {
+            clearTimeout(resizeTimer);
+        }
+        resizeTimer = setTimeout(function () {
+            autoStickyFooter();
+        }, 400);
+    });
 });
 // ]]> -->
 </script>

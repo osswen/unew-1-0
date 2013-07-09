@@ -49,6 +49,10 @@
     font: 18px/150% "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
+#content-main #about-us p {
+    color: #717171;
+}
+
 #content-main #about-us .concept {
     width: 465px;
 }
@@ -65,7 +69,7 @@
 }
 
 #service .slogan h3 {
-    width: 460px;
+    width: 466px;
     color: #9b7c43;
     font: 30px/140% "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }

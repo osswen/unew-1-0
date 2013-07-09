@@ -44,6 +44,11 @@
     vertical-align: middle;
 }
 
+#inquiry-list table tr.hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
 #inquiry-list table td {
     padding: 5px 0;
     border-bottom: 2px solid #9b7c43;

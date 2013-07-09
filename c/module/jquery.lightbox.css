@@ -149,5 +149,6 @@
 #lightbox-secNav-btnClose {
     float: right;
     width: 66px;
+    margin-top: 5px;
     padding-bottom: 0.7em;
 }
