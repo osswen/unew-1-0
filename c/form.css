@@ -9,6 +9,10 @@
 *
 **/
 
+input, button, textarea, select {
+    font: 12px Tahoma, Helvetica, Arial, sans-serif;
+}
+
 label {
     cursor: pointer;
 }
@@ -19,8 +23,7 @@ input[type="submit"], input[type="image"] {
     cursor: pointer;
 }
 
-input[type="search"], input[type="text"], input[type="password"],
-textarea, select {
+input[type="search"], input[type="text"], input[type="password"], textarea {
     border: 1px double #c0c0c0;
     background-color: #fff;
     -webkit-appearance: none;
@@ -28,4 +31,10 @@ textarea, select {
 
 input[type="search"]::-webkit-search-decoration {
     display: none;
+}
+
+.mark-required {
+    margin-right: 5px;
+    border: none;
+    font-weight: bold;
 }

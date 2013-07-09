@@ -3,14 +3,19 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>允新精品櫥櫃設計</title>
+<meta name="description" content="允新精品櫥櫃設計，提供多樣化的店舖裝潢案例，施工迅速且精緻，是您店舖裝潢的最佳選擇。" />
+<meta name="keywords" content="店舖空間,陳列規劃,中大型賣場,陳列櫃,生產製造,精品櫥櫃,設計製造,代工材板,封邊,CNC加工,裝潢,施工,設計,凹槽板,溝槽板,壁掛,允新" />
+<link type="image/x-icon" rel="shortcut icon" href="i/favicon.ico" />
 <link type="text/css" rel="stylesheet" href="c/reset.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/layout.css" media="screen, projection" />
+<link type="text/css" rel="stylesheet" href="c/form.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/style.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/single.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/page/index.css" media="screen, projection" />
 <script type="text/javascript" src="j/jquery.min.js"></script>
 <script type="text/javascript" src="j/jquery.hoverIntent.min.js"></script>
 <script type="text/javascript" src="j/jquery.superfish.min.js"></script>
+<script type="text/javascript" src="j/jquery.disable.min.js"></script>
 </head>
 <body>
 
@@ -25,23 +30,23 @@
 <div id="search-bar">
 <h3>站台搜尋</h3>
 <form name="siteSearchForm" id="siteSearchForm" action="search-list.html" method="get">
-<input type="text" name="k" maxlength="50" class="length-s keyword" />
+<input type="text" name="k" maxlength="100" class="length-s keyword" />
 <input type="submit" value="Search" title="Search" class="btn-submit" />
 </form>
 </div>
 
 <div id="site-func">
-<h3>網站選單</h3>
+<h3>站台次功能選單</h3>
 <ul>
 <li><a href="index.html">回首頁</a></li>
-<li><a href="inquiry-list.html">追踨清單</a></li>
+<li><a href="inquiry-list.html">追蹤清單</a></li>
 <li class="last"><a href="sitemap.html">網站導覽</a></li>
 </ul>
 </div>
 
 <script type="text/javascript">
-<!-- <![CDATA[
-$(function() {
+// <![CDATA[
+$(function () {
     $('ul.sf-menu').superfish({
         hoverClass:  'sfhover',
         pathClass:   'active',
@@ -55,30 +60,38 @@ $(function() {
 <div id="nav">
 <h3>網站主選單</h3>
 <ul class="sf-menu">
-    <li class="active"><a href="#">關於允新</a>
-        <ul>
-            <li><a href="about.html">公司簡介</a></li>
-            <li><a href="service.html">服務項目</a></li>
-            <li><a href="group.html">服務團隊</a></li>
-            <li class="last"><a href="map.html">交通位置</a></li>
-        </ul>
-    </li>
-    <li><a href="product-list.html">產品介紹</a>
-        <ul>
-            <li><a href="product-list.html">展示架系列</a></li>
-            <li><a href="product-list.html">玻璃櫃系列</a></li>
-            <li><a href="product-list.html">飾品櫃系列</a></li>
-            <li><a href="product-list.html">櫃檯系列</a></li>
-            <li><a href="product-list.html">賣場陳列</a></li>
-            <li><a href="product-list.html">子母桌</a></li>
-            <li><a href="product-list.html">中島櫃</a></li>
-            <li><a href="product-list.html">壁櫃系列</a></li>
-            <li class="last"><a href="product-list.html">其他商品</a></li>
-        </ul>
-    </li>
-    <li><a href="work-list.html">近期作品</a></li>
-    <li><a href="map.html">交通位置</a></li>
-    <li class="last"><a href="contact.html">聯絡我們</a></li>
+<li class="active"><a href="#">關於允新</a>
+    <ul>
+        <li><a href="about.html">公司簡介</a></li>
+        <li><a href="service.html">服務項目</a></li>
+        <li><a href="group.html">服務團隊</a></li>
+        <li class="last"><a href="equipment.html">設備介紹</a></li>
+    </ul>
+</li>
+<li><a href="product-list.html">產品介紹</a>
+    <ul>
+        <li><a href="product-list.html">展示架系列</a></li>
+        <li><a href="product-list.html">展示櫃系列</a></li>
+        <li><a href="product-list.html">玻璃櫃系列</a></li>
+        <li><a href="product-list.html">飾品櫃系列</a></li>
+        <li><a href="product-list.html">櫃檯系列</a></li>
+        <li><a href="product-list.html">賣場陳列</a></li>
+        <li><a href="product-list.html">子母桌</a></li>
+        <li><a href="product-list.html">中島櫃</a></li>
+        <li><a href="product-list.html">壁櫃系列</a></li>
+        <li class="last"><a href="product-list.html">其他商品</a></li>
+    </ul>
+</li>
+<li><a href="work-list.html">近期作品</a>
+    <ul>
+        <li><a href="work-list.html">室內裝潢</a></li>
+        <li><a href="work-list.html">實例比對</a></li>
+        <li><a href="work-list.html">店舖設計</a></li>
+        <li class="last"><a href="work-list.html">店面設計</a></li>
+    </ul>
+</li>
+<li><a href="map.html">交通位置</a></li>
+<li class="last"><a href="contact.html">聯絡我們</a></li>
 </ul>
 </div>
 
@@ -99,9 +112,9 @@ $(function() {
 <p class="service-item">
 <span>店舖空間陳列規劃</span>
 <span>中大型賣場陳列櫃生產製造</span>
-<span>各類精品櫥櫃設計製造</span><br />
-<span>代工材板、封邊 (PVC、ABS、美耐板)</span>
 <span>CNC加工</span>
+<span class="break">各類精品櫥櫃設計製造</span><br />
+<span>代工材板、封邊 (PVC、ABS、美耐板)</span>
 </p>
 </div>
 
@@ -115,18 +128,17 @@ $(function() {
 <div id="footer">
 <div class="footer-wrap">
 <div class="footer-link">
-<h3>網站主選單</h3>
+<h3>網站表尾選單</h3>
 <ul>
-<li><a href="#">公司簡介</a></li>
-<li><a href="#">最新消息</a></li>
-<li><a href="#">服務項目</a></li>
-<li><a href="#">案例介紹</a></li>
-<li><a href="#">交通位置</a></li>
-<li class="last"><a href="#">聯絡我們</a></li>
+<li><a href="index.html">首頁</a></li>
+<li><a href="about.html">關於允新</a></li>
+<li><a href="product-list.html">產品介紹</a></li>
+<li><a href="work-list.html">近期作品</a></li>
+<li><a href="map.html">交通位置</a></li>
+<li class="last"><a href="contact.html">聯絡我們</a></li>
 </ul>
-
-<p class="company-info">允新精品櫥櫃設計 台南市安南區環福街106巷102號  TEL：06-3563238 / FAX：06-3564398 / 客服信箱：yao1973@so-net.net.tw</p>
-<p class="copyright">Copyright &copy; 2013 u-new company. All rights reserved.</p>
+<p class="company-info">允新精品櫥櫃設計　地址：台南市安南區環福街106巷102號　電話：06-3563238　傳真：06-3564398　信箱：<a href="mailto:yao1973@so-net.net.tw">yao1973@so-net.net.tw</a></p>
+<p class="copyright">Copyright &copy; 2013 U-New Cupboard Design. All rights reserved.</p>
 </div>
 
 <div class="web-share">
@@ -141,6 +153,23 @@ $(function() {
 </div>
 </div>
 <!--============================== footer close ==============================-->
+
+<script type="text/javascript">
+// <![CDATA[
+$(function () {
+    var footer = $("#footer"),
+        pos = footer.position(),
+        height = $(window).height();
+    height = height - pos.top;
+    height = height - footer.height();
+    if (height > 0) {
+        footer.css({
+            'margin-top': height + 'px'
+        });
+    }
+});
+// ]]> -->
+</script>
 
 </body>
 </html>

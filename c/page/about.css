@@ -49,6 +49,10 @@
     font: 18px/150% "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
+#content-main #about-us .concept {
+    width: 465px;
+}
+
 /**
 *
 * =service
@@ -105,13 +109,13 @@
 **/
 
 #group blockquote {
-    position: releative;
+    position: relative;
 }
 
 #group blockquote img.steps {
     position: absolute;
     left: 5px;
-    bottom: 100px;
+    bottom: 80px;
     z-index: 1;
 }
 
@@ -141,7 +145,7 @@
 }
 
 #group blockquote ul {
-    position: releative;
+    position: relative;
     z-index: 5;
 }
 
@@ -315,28 +319,30 @@
 }
 
 #map .address {
-    height: 160px;
-    background: url(../../i/photo-map.png) no-repeat right 0;
+    height: 170px;
+    background: url(../../i/photo-map.png) no-repeat right bottom;
     color: #9b7c43;
 }
 
 #map .address h1 {
     float: left;
-    margin: 70px 5px 0 20px;
+    margin: 85px 5px 0 20px;
     font-size: 28px;
+    font-weight: bold;
 }
 
 #map .address p {
     float: left;
-    margin: 65px 0 0;
+    margin: 80px 0 0;
     font-size: 16px;
-    line-height: 16px;
+    font-weight: bold;
+    line-height: 18px;
     text-shadow: 1px 1px #fff;
     text-align: left;
 }
 
 #map iframe {
-    margin: -20px 0 20px;
+    margin: -20px 0 40px;
     border: 7px solid #e4e4e4;
 }
 
@@ -351,11 +357,13 @@
 }
 
 #map ol li h3 {
-    margin-bottom: 3px;
+    margin-bottom: 8px;
     font-size: 24px;
+    font-weight: bold;
 }
 
 #map ol li p {
     padding-left: 28px;
+    color: #505050;
     font-size: 18px;
 }

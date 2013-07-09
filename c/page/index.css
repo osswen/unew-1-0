@@ -70,3 +70,7 @@ body {
     padding: 0 0 0 10px;
     background: url(../../i/icon-plus.png) no-repeat 0 8px;
 }
+
+#unew-slogan p.service-item .break {
+    clear: left;
+}

@@ -81,6 +81,7 @@
 
 #contact form fieldset p label {
     float: left;
+    width: 70px;
     margin-right: 10px;
     padding-left: 10px;
     color: #717171;
@@ -92,6 +93,7 @@
     margin-left: -7px;
 }
 
+#contact form fieldset p textarea,
 #contact form fieldset p input {
     width: 320px;
     border: 1px solid #abadb3;

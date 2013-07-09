@@ -3,13 +3,18 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>允新精品櫥櫃設計</title>
+<meta name="description" content="允新精品櫥櫃設計，提供多樣化的店舖裝潢案例，施工迅速且精緻，是您店舖裝潢的最佳選擇。" />
+<meta name="keywords" content="店舖空間,陳列規劃,中大型賣場,陳列櫃,生產製造,精品櫥櫃,設計製造,代工材板,封邊,CNC加工,裝潢,施工,設計,凹槽板,溝槽板,壁掛,允新" />
+<link type="image/x-icon" rel="shortcut icon" href="i/favicon.ico" />
 <link type="text/css" rel="stylesheet" href="c/reset.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/layout.css" media="screen, projection" />
+<link type="text/css" rel="stylesheet" href="c/form.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/style.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/page/contact.css" media="screen, projection" />
 <script type="text/javascript" src="j/jquery.min.js"></script>
 <script type="text/javascript" src="j/jquery.hoverIntent.min.js"></script>
 <script type="text/javascript" src="j/jquery.superfish.min.js"></script>
+<script type="text/javascript" src="j/jquery.disable.min.js"></script>
 </head>
 <body>
 
@@ -24,13 +29,13 @@
 <div id="search-bar">
 <h3>站台搜尋</h3>
 <form name="siteSearchForm" id="siteSearchForm" action="search-list.html" method="get">
-<input type="text" name="k" maxlength="50" class="length-s keyword" />
+<input type="text" name="k" maxlength="100" class="length-s keyword" />
 <input type="submit" value="Search" title="Search" class="btn-submit" />
 </form>
 </div>
 
 <div id="site-func">
-<h3>網站選單</h3>
+<h3>站台次功能選單</h3>
 <ul>
 <li><a href="index.html">回首頁</a></li>
 <li><a href="inquiry-list.html">追蹤清單</a></li>
@@ -39,8 +44,8 @@
 </div>
 
 <script type="text/javascript">
-<!-- <![CDATA[
-$(function() {
+// <![CDATA[
+$(function () {
     $('ul.sf-menu').superfish({
         hoverClass:  'sfhover',
         pathClass:   'active',
@@ -54,30 +59,38 @@ $(function() {
 <div id="nav">
 <h3>網站主選單</h3>
 <ul class="sf-menu">
-    <li class="active"><a href="#">關於允新</a>
-        <ul>
-            <li><a href="about.html">公司簡介</a></li>
-            <li><a href="service.html">服務項目</a></li>
-            <li><a href="group.html">服務團隊</a></li>
-            <li class="last"><a href="map.html">交通位置</a></li>
-        </ul>
-    </li>
-    <li><a href="product-list.html">產品介紹</a>
-        <ul>
-            <li><a href="product-list.html">展示架系列</a></li>
-            <li><a href="product-list.html">玻璃櫃系列</a></li>
-            <li><a href="product-list.html">飾品櫃系列</a></li>
-            <li><a href="product-list.html">櫃檯系列</a></li>
-            <li><a href="product-list.html">賣場陳列</a></li>
-            <li><a href="product-list.html">子母桌</a></li>
-            <li><a href="product-list.html">中島櫃</a></li>
-            <li><a href="product-list.html">壁櫃系列</a></li>
-            <li class="last"><a href="product-list.html">其他商品</a></li>
-        </ul>
-    </li>
-    <li><a href="work-list.html">近期作品</a></li>
-    <li><a href="map.html">交通位置</a></li>
-    <li class="last"><a href="contact.html">聯絡我們</a></li>
+<li class="active"><a href="#">關於允新</a>
+    <ul>
+        <li><a href="about.html">公司簡介</a></li>
+        <li><a href="service.html">服務項目</a></li>
+        <li><a href="group.html">服務團隊</a></li>
+        <li class="last"><a href="equipment.html">設備介紹</a></li>
+    </ul>
+</li>
+<li><a href="product-list.html">產品介紹</a>
+    <ul>
+        <li><a href="product-list.html">展示架系列</a></li>
+        <li><a href="product-list.html">展示櫃系列</a></li>
+        <li><a href="product-list.html">玻璃櫃系列</a></li>
+        <li><a href="product-list.html">飾品櫃系列</a></li>
+        <li><a href="product-list.html">櫃檯系列</a></li>
+        <li><a href="product-list.html">賣場陳列</a></li>
+        <li><a href="product-list.html">子母桌</a></li>
+        <li><a href="product-list.html">中島櫃</a></li>
+        <li><a href="product-list.html">壁櫃系列</a></li>
+        <li class="last"><a href="product-list.html">其他商品</a></li>
+    </ul>
+</li>
+<li><a href="work-list.html">近期作品</a>
+    <ul>
+        <li><a href="work-list.html">室內裝潢</a></li>
+        <li><a href="work-list.html">實例比對</a></li>
+        <li><a href="work-list.html">店舖設計</a></li>
+        <li class="last"><a href="work-list.html">店面設計</a></li>
+    </ul>
+</li>
+<li><a href="map.html">交通位置</a></li>
+<li class="last"><a href="contact.html">聯絡我們</a></li>
 </ul>
 </div>
 
@@ -95,7 +108,9 @@ $(function() {
 </div>
 </div>
 
+<!--============================== container start ===========================-->
 <div class="container">
+
 <!--============================== content-main start ========================-->
 <div id="content-main">
 
@@ -122,9 +137,13 @@ $(function() {
 <form name="contactForm" id="contactForm" method="get" action="">
 <fieldset>
 <p>
-<label><acronym title="Required field" class="mark-required">*</acronym>問題類別</label>
+<label for="category"><acronym title="Required field" class="mark-required">*</acronym>問題類別</label>
 <select name="category" id="category" size="1">
-<option value="">產品問題</option>
+<option value="" selected="selected">請選擇類別</option>
+<option value="0000000001">產品問題</option>
+<option value="0000000002">產品詢價</option>
+<option value="0000000003">裝潢規劃</option>
+<option value="0000000004">估價需求</option>
 </select>
 </p>
 <p>
@@ -132,34 +151,36 @@ $(function() {
 <input type="text" name="name" id="name" maxlength="100" value="" />
 </p>
 <p>
-<label for="officeName">公司名稱</label>
-<input type="text" name="officeName" id="officeName" maxlength="100" value="" />
+<label for="company">公司名稱</label>
+<input type="text" name="company" id="company" maxlength="100" value="" />
 </p>
 <p>
 <label for="tel">聯絡電話</label>
-<input type="text" name="telCode" id="telCode" maxlength="3" value="" class="length-xs" /> - 
-<input type="text" name="tel" id="tel" maxlength="8" value="" />
+<input type="text" name="tel" id="tel" maxlength="20" value="" />
 </p>
 <p>
 <label for="fax">傳真號碼</label>
-<input type="text" name="faxCode" id="faxCode" maxlength="3" value="" class="length-xs" /> - 
-<input type="text" name="fax" id="fax" maxlength="8" value="" />
+<input type="text" name="fax" id="fax" maxlength="20" value="" />
 </p>
 <p>
 <label for="mobile"><acronym title="Required field" class="mark-required">*</acronym>手機號碼</label>
-<input type="text" name="mobile" id="mobile" maxlength="100" value="" />
+<input type="text" name="mobile" id="mobile" maxlength="10" value="" />
 </p>
 <p>
 <label for="email"><acronym title="Required field" class="mark-required">*</acronym>電子郵件</label>
 <input type="text" name="email" id="email" maxlength="100" value="" />
 </p>
 <p>
-<label><acronym title="Required field" class="mark-required">*</acronym>詢問內容</label>
-<textarea name="question" id="question" cols="40" rows="4"></textarea>
+<label for="subject"><acronym title="Required field" class="mark-required">*</acronym>詢問主旨</label>
+<input type="text" name="subject" id="subject" maxlength="100" value="" />
 </p>
 <p>
-<label for="captcha"><acronym title="Required field" class="mark-required">*</acronym>電子郵件</label>
-<input type="text" name="captcha" id="captcha" maxlength="4" value="" class="length-s" />
+<label for="content"><acronym title="Required field" class="mark-required">*</acronym>詢問內容</label>
+<textarea name="content" id="content" cols="40" rows="4"></textarea>
+</p>
+<p>
+<label for="captcha"><acronym title="Required field" class="mark-required">*</acronym>驗 證 碼</label>
+<input type="text" name="captcha_phrase" id="captcha" maxlength="4" class="length-s" />
 <a href="#"><img src="i/captcha-s.gif" alt="" width="60" height="20" border="0" />重新產生</a>
 </p>
 </fieldset>
@@ -168,6 +189,79 @@ $(function() {
 <input type="reset" value="重填" class="btn-reset" />
 </fieldset>
 </form>
+
+<script type="text/javascript">
+// <![CDATA[
+$(function () {
+    $('#name').focus();
+    $('#contactForm').submit(function () {
+        return chkContactFormData(this);
+    });
+    $('.btn-reset').click(function () {
+        return confirm('您確定要重新填寫表單？');
+    });
+});
+
+function chkContactFormData(fm) {
+    var pattern = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+
+    fm.category.value = $.trim(fm.category.value);
+    fm.name.value = $.trim(fm.name.value);
+    fm.company.value = $.trim(fm.company.value);
+    fm.tel.value = $.trim(fm.tel.value);
+    fm.fax.value = $.trim(fm.fax.value);
+    fm.mobile.value = $.trim(fm.mobile.value);
+    fm.email.value = $.trim(fm.email.value);
+    fm.subject.value = $.trim(fm.subject.value);
+    fm.content.value = $.trim(fm.content.value);
+    fm.captcha_phrase.value = $.trim(fm.captcha_phrase.value);
+
+    if ('' === fm.category.value) {
+        alert("【問題類別】為必填資料！");
+        fm.category.focus();
+        return false;
+    }
+    if ('' === fm.name.value) {
+        alert("【姓名】為必填資料！");
+        fm.name.focus();
+        return false;
+    }
+    if ('' === fm.mobile.value) {
+        alert("【手機號碼】為必填資料！");
+        fm.mobile.focus();
+        return false;
+    }
+    if ('' === fm.email.value) {
+        alert("【電子郵件】為必填資料！");
+        fm.email.focus();
+        return false;
+    }
+    if (!pattern.test(fm.email.value)) {
+        alert("請輸入格式正確的 E-mail 帳號！");
+        fm.email.select();
+        fm.email.focus();
+        return false;
+    }
+    if ('' === fm.subject.value) {
+        alert("【詢問主旨】為必填資料！");
+        fm.subject.focus();
+        return false;
+    }
+    if ('' === fm.content.value) {
+        alert("【詢問內容】為必填資料！");
+        fm.content.focus();
+        return false;
+    }
+    if ('' === fm.captcha_phrase.value) {
+        alert("【驗證碼】為必填資料！");
+        fm.captcha_phrase.focus();
+        return false;
+    }
+
+    return true;
+}
+// ]]> -->
+</script>
 </div>
 
 </div>
@@ -177,7 +271,7 @@ $(function() {
 <div id="content-sidebar">
 
 <div id="cat-nav">
-<h3>分類選單</h3>
+<h3>邊欄分類選單</h3>
 <ul>
 <li class="active"><a href="contact.html">聯絡我們</a></li>
 </ul>
@@ -196,7 +290,9 @@ $(function() {
 
 </div>
 <!--============================== content-sidebar close =====================-->
+
 </div>
+<!--============================== container close ===========================-->
 
 </div>
 <!--============================== content-wrapper close =====================-->
@@ -205,18 +301,17 @@ $(function() {
 <div id="footer">
 <div class="footer-wrap">
 <div class="footer-link">
-<h3>網站主選單</h3>
+<h3>網站表尾選單</h3>
 <ul>
-<li><a href="#">公司簡介</a></li>
-<li><a href="#">最新消息</a></li>
-<li><a href="#">服務項目</a></li>
-<li><a href="#">案例介紹</a></li>
-<li><a href="#">交通位置</a></li>
-<li class="last"><a href="#">聯絡我們</a></li>
+<li><a href="index.html">首頁</a></li>
+<li><a href="about.html">關於允新</a></li>
+<li><a href="product-list.html">產品介紹</a></li>
+<li><a href="work-list.html">近期作品</a></li>
+<li><a href="map.html">交通位置</a></li>
+<li class="last"><a href="contact.html">聯絡我們</a></li>
 </ul>
-
-<p class="company-info">允新精品櫥櫃設計 台南市安南區環福街106巷102號  TEL：06-3563238 / FAX：06-3564398 / 客服信箱：yao1973@so-net.net.tw</p>
-<p class="copyright">Copyright &copy; 2013 u-new company. All rights reserved.</p>
+<p class="company-info">允新精品櫥櫃設計　地址：台南市安南區環福街106巷102號　電話：06-3563238　傳真：06-3564398　信箱：<a href="mailto:yao1973@so-net.net.tw">yao1973@so-net.net.tw</a></p>
+<p class="copyright">Copyright &copy; 2013 U-New Cupboard Design. All rights reserved.</p>
 </div>
 
 <div class="web-share">
@@ -231,6 +326,23 @@ $(function() {
 </div>
 </div>
 <!--============================== footer close ==============================-->
+
+<script type="text/javascript">
+// <![CDATA[
+$(function () {
+    var footer = $("#footer"),
+        pos = footer.position(),
+        height = $(window).height();
+    height = height - pos.top;
+    height = height - footer.height();
+    if (height > 0) {
+        footer.css({
+            'margin-top': height + 'px'
+        });
+    }
+});
+// ]]> -->
+</script>
 
 </body>
 </html>

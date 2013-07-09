@@ -15,7 +15,15 @@
     margin-bottom: 30px;
 }
 
+#content-main .fb-like {
+    margin: 0 0 20px 20px;
+}
+
 #content-main #work-list h2 {
+    margin: 0;
+}
+
+#content-main #work-detail h2 {
     margin: 0;
 }
 
@@ -120,6 +128,7 @@
 }
 
 #work-detail .content .date {
+    margin-bottom: 10px;
     float: right;
     color: #585858;
     font-size: 12px;
@@ -143,4 +152,30 @@
     padding: 7px;
     border: 1px solid #9b7c43;
     border-radius: 5px;
+}
+
+/**
+*
+* =pager
+*
+**/
+
+#work-detail .pager {
+    overflow: hidden;
+}
+
+#work-detail .pager a {
+    width: 99px;
+    height: 34px;
+    background: url(../../i/icon-pager.png) no-repeat 0 0;
+    text-indent: -100000px;
+}
+
+#work-detail .pager a.btn-prev {
+    float: left;
+}
+
+#work-detail .pager a.btn-next {
+    float: right;
+    background-position: 0 -34px;
 }

@@ -46,22 +46,21 @@
     text-decoration: none;
 }
 
-#content-main .article-content .pager ul li a.first,
-#content-main .article-content .pager ul li a.last {
+#content-main .article-content .pager ul li.first a,
+#content-main .article-content .pager ul li.last a {
     background-color: #9b7c43;
     color: #fff;
     font-size: 16px;
     line-height: 20px;
 }
 
-#content-main .article-content .pager ul li a.first {
+#content-main .article-content .pager ul li.first a {
     border-left: 1px solid #c6c6c6;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
-    line-height: 
 }
 
-#content-main .article-content .pager ul li a.last {
+#content-main .article-content .pager ul li.last a {
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
 }

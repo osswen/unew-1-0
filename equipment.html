@@ -3,13 +3,18 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>允新精品櫥櫃設計</title>
+<meta name="description" content="允新精品櫥櫃設計，提供多樣化的店舖裝潢案例，施工迅速且精緻，是您店舖裝潢的最佳選擇。" />
+<meta name="keywords" content="店舖空間,陳列規劃,中大型賣場,陳列櫃,生產製造,精品櫥櫃,設計製造,代工材板,封邊,CNC加工,裝潢,施工,設計,凹槽板,溝槽板,壁掛,允新" />
+<link type="image/x-icon" rel="shortcut icon" href="i/favicon.ico" />
 <link type="text/css" rel="stylesheet" href="c/reset.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/layout.css" media="screen, projection" />
+<link type="text/css" rel="stylesheet" href="c/form.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/style.css" media="screen, projection" />
 <link type="text/css" rel="stylesheet" href="c/page/about.css" media="screen, projection" />
 <script type="text/javascript" src="j/jquery.min.js"></script>
 <script type="text/javascript" src="j/jquery.hoverIntent.min.js"></script>
 <script type="text/javascript" src="j/jquery.superfish.min.js"></script>
+<script type="text/javascript" src="j/jquery.disable.min.js"></script>
 <script type="text/javascript" src="j/jquery.jcarousellite.min.js"></script>
 </head>
 <body>
@@ -25,13 +30,13 @@
 <div id="search-bar">
 <h3>站台搜尋</h3>
 <form name="siteSearchForm" id="siteSearchForm" action="search-list.html" method="get">
-<input type="text" name="k" maxlength="50" class="length-s keyword" />
+<input type="text" name="k" maxlength="100" class="length-s keyword" />
 <input type="submit" value="Search" title="Search" class="btn-submit" />
 </form>
 </div>
 
 <div id="site-func">
-<h3>網站選單</h3>
+<h3>站台次功能選單</h3>
 <ul>
 <li><a href="index.html">回首頁</a></li>
 <li><a href="inquiry-list.html">追蹤清單</a></li>
@@ -40,8 +45,11 @@
 </div>
 
 <script type="text/javascript">
-<!-- <![CDATA[
-$(function() {
+// <![CDATA[
+$(function () {
+    $('body').disable({
+        message: '文字及圖片內容版權皆屬《允新精品櫥櫃設計》所有，\n請勿擅自拷貝，如需參考資料請與我們聯絡，感謝！'
+    });
     $('ul.sf-menu').superfish({
         hoverClass:  'sfhover',
         pathClass:   'active',
@@ -55,30 +63,38 @@ $(function() {
 <div id="nav">
 <h3>網站主選單</h3>
 <ul class="sf-menu">
-    <li class="active"><a href="#">關於允新</a>
-        <ul>
-            <li><a href="about.html">公司簡介</a></li>
-            <li><a href="service.html">服務項目</a></li>
-            <li><a href="group.html">服務團隊</a></li>
-            <li class="last"><a href="map.html">交通位置</a></li>
-        </ul>
-    </li>
-    <li><a href="product-list.html">產品介紹</a>
-        <ul>
-            <li><a href="product-list.html">展示架系列</a></li>
-            <li><a href="product-list.html">玻璃櫃系列</a></li>
-            <li><a href="product-list.html">飾品櫃系列</a></li>
-            <li><a href="product-list.html">櫃檯系列</a></li>
-            <li><a href="product-list.html">賣場陳列</a></li>
-            <li><a href="product-list.html">子母桌</a></li>
-            <li><a href="product-list.html">中島櫃</a></li>
-            <li><a href="product-list.html">壁櫃系列</a></li>
-            <li class="last"><a href="product-list.html">其他商品</a></li>
-        </ul>
-    </li>
-    <li><a href="work-list.html">近期作品</a></li>
-    <li><a href="map.html">交通位置</a></li>
-    <li class="last"><a href="contact.html">聯絡我們</a></li>
+<li class="active"><a href="#">關於允新</a>
+    <ul>
+        <li><a href="about.html">公司簡介</a></li>
+        <li><a href="service.html">服務項目</a></li>
+        <li><a href="group.html">服務團隊</a></li>
+        <li class="last"><a href="equipment.html">設備介紹</a></li>
+    </ul>
+</li>
+<li><a href="product-list.html">產品介紹</a>
+    <ul>
+        <li><a href="product-list.html">展示架系列</a></li>
+        <li><a href="product-list.html">展示櫃系列</a></li>
+        <li><a href="product-list.html">玻璃櫃系列</a></li>
+        <li><a href="product-list.html">飾品櫃系列</a></li>
+        <li><a href="product-list.html">櫃檯系列</a></li>
+        <li><a href="product-list.html">賣場陳列</a></li>
+        <li><a href="product-list.html">子母桌</a></li>
+        <li><a href="product-list.html">中島櫃</a></li>
+        <li><a href="product-list.html">壁櫃系列</a></li>
+        <li class="last"><a href="product-list.html">其他商品</a></li>
+    </ul>
+</li>
+<li><a href="work-list.html">近期作品</a>
+    <ul>
+        <li><a href="work-list.html">室內裝潢</a></li>
+        <li><a href="work-list.html">實例比對</a></li>
+        <li><a href="work-list.html">店舖設計</a></li>
+        <li class="last"><a href="work-list.html">店面設計</a></li>
+    </ul>
+</li>
+<li><a href="map.html">交通位置</a></li>
+<li class="last"><a href="contact.html">聯絡我們</a></li>
 </ul>
 </div>
 
@@ -96,7 +112,9 @@ $(function() {
 </div>
 </div>
 
+<!--============================== container start ===========================-->
 <div class="container">
+
 <!--============================== content-main start ========================-->
 <div id="content-main">
 
@@ -117,22 +135,35 @@ $(function() {
 </div>
 
 <script type="text/javascript">
-<!-- <![CDATA[
-$(function() {
+// <![CDATA[
+$(function () {
+    $('.gallery .list ul li:first').addClass('active');
     $('.gallery .list').jCarouselLite({
+        circular: true,
+        scroll: 3,
+        speed: 800,
         btnNext: '.gallery .list .next',
         btnPrev: '.gallery .list .prev'
     });
-
     $('.gallery .list ul li a').click(function () {
         var imgSrc = $(this).children('img').attr('src'),
-            title  = $(this).parent('li').data('title');
+            title = $(this).parent('li').data('title'),
+            content = $(this).parent('li').data('content');
         $('.gallery .list ul li').removeClass('active');
         $(this).parent('li').addClass('active');
         $('.gallery .main-photo img').attr('src', imgSrc);
-        $('.gallery .main-photo .content').slideUp();
-        $('.gallery .main-photo .content').slideDown();
-        $('.gallery .main-photo .content h3').text(title);
+        if ('' !== title || '' !== content) {
+            $('.gallery .main-photo .content').slideUp();
+            $('.gallery .main-photo .content').slideDown();
+            if ('' !== title) {
+                $('.gallery .main-photo .content h3').text(title);
+            }
+            if ('' !== content) {
+                $('.gallery .main-photo .content p').text(content);
+            }
+        } else {
+            $('.gallery .main-photo .content').hide();
+        }
         return false;
     });
 });
@@ -153,36 +184,35 @@ $(function() {
 <a href="#" class="next">next</a>
 <div class="wrap">
 <ul>
-<li class="active" data-title="CNC電腦雕刻機"><a href="#"><img src="i/eq/img-01.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題一"><a href="#"><img src="i/eq/img-02.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="第二則標題"><a href="#"><img src="i/eq/img-03.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題三"><a href="#"><img src="i/eq/img-04.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="第四則標題"><a href="#"><img src="i/eq/img-05.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題五"><a href="#"><img src="i/eq/img-06.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="第六則標題"><a href="#"><img src="i/eq/img-07.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題七"><a href="#"><img src="i/eq/img-08.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="第八則標題"><a href="#"><img src="i/eq/img-09.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題九"><a href="#"><img src="i/eq/img-10.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-10.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-11.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-12.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-13.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-14.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-15.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-16.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-17.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-18.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-19.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-20.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-21.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-22.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-23.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-24.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-25.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-26.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-27.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-28.jpg" alt="" width="67" height="67" /></a></li>
-<li data-title="標題"><a href="#"><img src="i/eq/img-29.jpg" alt="" width="67" height="67" /></a></li>
+<li class="active" data-title="CNC電腦雕刻機" data-content="擁有CNC數位化控制機具，可自製生產，並提高生產品質，縮短工程時間，進一步降低製造成本。"><a href="#"><img src="i/eq/img-01.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題2" data-content="內文2"><a href="#"><img src="i/eq/img-02.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題3" data-content="內文3"><a href="#"><img src="i/eq/img-03.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題4" data-content="內文4"><a href="#"><img src="i/eq/img-04.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題5" data-content="內文5"><a href="#"><img src="i/eq/img-05.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題6" data-content="內文6"><a href="#"><img src="i/eq/img-06.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題7" data-content="內文7"><a href="#"><img src="i/eq/img-07.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題8" data-content="內文8"><a href="#"><img src="i/eq/img-08.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題9" data-content="內文9"><a href="#"><img src="i/eq/img-09.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題10" data-content="內文10"><a href="#"><img src="i/eq/img-10.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題11" data-content="內文11"><a href="#"><img src="i/eq/img-11.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題12" data-content="內文12"><a href="#"><img src="i/eq/img-12.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題13" data-content="內文13"><a href="#"><img src="i/eq/img-13.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題14" data-content="內文14"><a href="#"><img src="i/eq/img-14.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題15" data-content="內文15"><a href="#"><img src="i/eq/img-15.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題16" data-content="內文16"><a href="#"><img src="i/eq/img-16.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題17" data-content="內文17"><a href="#"><img src="i/eq/img-17.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題18" data-content="內文18"><a href="#"><img src="i/eq/img-18.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題19" data-content="內文19"><a href="#"><img src="i/eq/img-19.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題20" data-content="內文20"><a href="#"><img src="i/eq/img-20.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題21" data-content="內文21"><a href="#"><img src="i/eq/img-21.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題22" data-content="內文22"><a href="#"><img src="i/eq/img-22.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題23" data-content="內文23"><a href="#"><img src="i/eq/img-23.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題24" data-content="內文24"><a href="#"><img src="i/eq/img-24.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題25" data-content="內文25"><a href="#"><img src="i/eq/img-25.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題26" data-content="內文26"><a href="#"><img src="i/eq/img-26.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題27" data-content="內文27"><a href="#"><img src="i/eq/img-27.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題28" data-content="內文28"><a href="#"><img src="i/eq/img-28.jpg" alt="" width="67" height="67" /></a></li>
+<li data-title="標題29" data-content="內文29"><a href="#"><img src="i/eq/img-29.jpg" alt="" width="67" height="67" /></a></li>
 </ul>
 </div>
 </div>
@@ -196,7 +226,7 @@ $(function() {
 <div id="content-sidebar">
 
 <div id="cat-nav">
-<h3>分類選單</h3>
+<h3>邊欄分類選單</h3>
 <ul>
 <li><a href="about.html">公司簡介</a></li>
 <li><a href="service.html">服務項目</a></li>
@@ -208,7 +238,9 @@ $(function() {
 
 </div>
 <!--============================== content-sidebar close =====================-->
+
 </div>
+<!--============================== container close ===========================-->
 
 </div>
 <!--============================== content-wrapper close =====================-->
@@ -217,18 +249,17 @@ $(function() {
 <div id="footer">
 <div class="footer-wrap">
 <div class="footer-link">
-<h3>網站主選單</h3>
+<h3>網站表尾選單</h3>
 <ul>
-<li><a href="#">公司簡介</a></li>
-<li><a href="#">最新消息</a></li>
-<li><a href="#">服務項目</a></li>
-<li><a href="#">案例介紹</a></li>
-<li><a href="#">交通位置</a></li>
-<li class="last"><a href="#">聯絡我們</a></li>
+<li><a href="index.html">首頁</a></li>
+<li><a href="about.html">關於允新</a></li>
+<li><a href="product-list.html">產品介紹</a></li>
+<li><a href="work-list.html">近期作品</a></li>
+<li><a href="map.html">交通位置</a></li>
+<li class="last"><a href="contact.html">聯絡我們</a></li>
 </ul>
-
-<p class="company-info">允新精品櫥櫃設計 台南市安南區環福街106巷102號  TEL：06-3563238 / FAX：06-3564398 / 客服信箱：yao1973@so-net.net.tw</p>
-<p class="copyright">Copyright &copy; 2013 u-new company. All rights reserved.</p>
+<p class="company-info">允新精品櫥櫃設計　地址：台南市安南區環福街106巷102號　電話：06-3563238　傳真：06-3564398　信箱：<a href="mailto:yao1973@so-net.net.tw">yao1973@so-net.net.tw</a></p>
+<p class="copyright">Copyright &copy; 2013 U-New Cupboard Design. All rights reserved.</p>
 </div>
 
 <div class="web-share">
@@ -243,6 +274,23 @@ $(function() {
 </div>
 </div>
 <!--============================== footer close ==============================-->
+
+<script type="text/javascript">
+// <![CDATA[
+$(function () {
+    var footer = $("#footer"),
+        pos = footer.position(),
+        height = $(window).height();
+    height = height - pos.top;
+    height = height - footer.height();
+    if (height > 0) {
+        footer.css({
+            'margin-top': height + 'px'
+        });
+    }
+});
+// ]]> -->
+</script>
 
 </body>
 </html>
